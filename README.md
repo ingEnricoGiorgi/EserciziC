@@ -1,1 +1,2 @@
 # EserciziC
+gtignore C++
