@@ -5,7 +5,7 @@ printf(“forse… (“numero parametri: %d) %s\n”, argc, argv[0]);
 if(argc>1) printf(“primo argomento utente: %S\n”, argv[1]);
  if(argc>2){
 anni=atoi(argv[2]); //alphanumeric to integer
-  if(anni !=0)
+  if(anni !=0)git
    printf(“secondo argomento utente: (%S) valido %d  \n”, argv[2], anni);
   else{
    printf(“secondo argomento utente: (%S) non valido \n”, argv[2]);
