@@ -15,4 +15,3 @@ anni=atoi(argv[2]); //alphanumeric to integer
 }
 return 0;
 }
-b
