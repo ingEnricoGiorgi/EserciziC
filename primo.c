@@ -1,5 +1,5 @@
 #include <stdio.h>
-##include<stdlib.h>
+#include <stdlib.h>
 int main(int argc, char *argv[]){
 printf(“forse… (“numero parametri: %d) %s\n”, argc, argv[0]);
 if(argc>1) printf(“primo argomento utente: %S\n”, argv[1]);
