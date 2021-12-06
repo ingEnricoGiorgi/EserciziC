@@ -8,22 +8,25 @@ bash-5.1$ cyril
 |42_|Р|С|Т|У|Ф|Х|Ц|Ч|Ш|Щ|Ъ|Ы|Ь|Э|Ю|Я|
 |43_|а|б|в|г|д|е|ж|з|и|й|к|л|м|н|о|п|
 |44_|р|с|т|у|ф|х|ц|ч|ш|щ|ъ|ы|ь|э|ю|я|
+
 */
+
 #include <stdio.h>
 #include <stdlib.h>
+
 #include "converti_api.h"
 
 int main(int argc, char *argv[]) {
    char risultato[5]; 
    printf("    "); 
-   for (int c = 0; c < 16; c++)  printf("|%X", c); //post incremento c++  %Xplaceholder in maiuscolo
+   for (int c = 0; c < 16; c++)  printf("|%X", c); 
    printf("|\n|---");    
    for (int c = 0; c < 16; c++)  printf("|-"); 
    printf("|\n");    
    for (int r = 65; r < 69; r++) {
      printf("|%X_", r);  
      for (int c = 0; c < 16; c++) {
-       char cyril[3];
+       char cyril[4];
        sprintf(cyril, "%3.3X", 16 * r + c);  
        converti_api(cyril, risultato);
        printf("|%s", risultato);

@@ -1,2 +1,2 @@
-# EserciziC
-Materiale vario formazione 
+# esercizic
+# creato il 20211115
